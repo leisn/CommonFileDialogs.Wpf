@@ -1,4 +1,6 @@
-# Windows-API-Code-Pack-1.1.4
+# CommonFileDialogs
+
+CommonFileDialogs cropped from Windows API Code Pack 1.1.
 
 ## README
 

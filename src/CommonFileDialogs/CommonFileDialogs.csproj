@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <AssemblyName>Microsoft.WindowsAPICodePack.Shell.CommonFileDialogs</AssemblyName>
-    <PackageId>Microsoft.WindowsAPICodePack.Shell.CommonFileDialogs</PackageId>
+    <PackageId>WindowsAPICodePack.Shell.CommonFileDialogs</PackageId>
     <VersionPrefix>1.1.4</VersionPrefix>
     <Title>$(AssemblyName)</Title>
     <Authors>rpastric;contre;dahall;emako</Authors>
@@ -11,9 +11,9 @@
     <PackageLicenseUrl>https://github.com/emako/CommonFileDialogs/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/emako/CommonFileDialogs</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>The Shell code for the WindowsAPICodePack. This is an updated version containing all available bug fixes for this code as of 2020-01-04.</Description>
-    <PackageReleaseNotes>See CHANGELOG.md in project site. https://github.com/emako/CommonFileDialogs/blob/master/CHANGELOG.md </PackageReleaseNotes>
-    <Copyright>Copyright © 2020</Copyright>
+    <Description>CommonFileDialogs cropped from Windows API Code Pack 1.1.</Description>
+    <PackageReleaseNotes>See in project site.</PackageReleaseNotes>
+    <Copyright>Copyright © 2023</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageTags>WindowsAPICodePack</PackageTags>
     <IncludeSymbols>true</IncludeSymbols>
@@ -21,10 +21,18 @@
     <TargetFrameworks>net452;net6.0-windows</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
+    <UseWinUI>false</UseWinUI>
     <LangVersion>latest</LangVersion>
     <RootNamespace>Microsoft.WindowsAPICodePack.Shell</RootNamespace>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="\"/>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+	
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
@@ -35,6 +43,7 @@
       <DependentUpon>LocalizedMessages.resx</DependentUpon>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Update="Resources\LocalizedMessages.resx">
       <CustomToolNamespace>Microsoft.WindowsAPICodePack.Shell.Resources</CustomToolNamespace>
@@ -42,4 +51,5 @@
       <LastGenOutput>LocalizedMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
 </Project>
