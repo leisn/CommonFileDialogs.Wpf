@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Microsoft.WindowsAPICodePack.Shell.CommonFileDialogs</AssemblyName>
+    <PackageId>Microsoft-WindowsAPICodePack-Shell</PackageId>
+    <VersionPrefix>1.1.4</VersionPrefix>
+    <Title>$(AssemblyName)</Title>
+    <Authors>rpastric;contre;dahall</Authors>
+    <Company>Microsoft</Company>
+    <Product>Microsoft Windows API Code Pack for .NET Framework</Product>
+    <PackageLicenseUrl>https://github.com/contre/Windows-API-Code-Pack-1.1/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/contre/Windows-API-Code-Pack-1.1</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>The Shell code for the WindowsAPICodePack. This is an updated version containing all available bug fixes for this code as of 2020-01-04.</Description>
+    <PackageReleaseNotes>See CHANGELOG.md in project site. https://github.com/contre/Windows-API-Code-Pack-1.1/blob/master/CHANGELOG.md </PackageReleaseNotes>
+    <Copyright>Copyright © 2020</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>WindowsAPICodePack</PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <TargetFrameworks>net452;net6.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Microsoft.WindowsAPICodePack.Shell</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Resources\LocalizedMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LocalizedMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\LocalizedMessages.resx">
+      <CustomToolNamespace>Microsoft.WindowsAPICodePack.Shell.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
