@@ -1,10 +1,10 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using System;
 using System.Diagnostics;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     /// <summary>Abstract base class for all dialog controls</summary>
     public abstract class DialogControl

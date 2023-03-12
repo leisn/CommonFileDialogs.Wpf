@@ -30,7 +30,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell.PropertySystem
+namespace WindowsAPICodePack.Shell.PropertySystem
 {
     /// <summary>Defines the shell property description information for a property.</summary>
     public class ShellPropertyDescription : IDisposable

@@ -1,4 +1,4 @@
-﻿using Microsoft.WindowsAPICodePack.Shell.Resources;
+﻿using WindowsAPICodePack.Shell.Resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace Microsoft.WindowsAPICodePack.Shell.PropertySystem
+namespace WindowsAPICodePack.Shell.PropertySystem
 {
     /// <summary>Factory class for creating typed ShellProperties. Generates/caches expressions to create generic ShellProperties.</summary>
     internal static class ShellPropertyFactory

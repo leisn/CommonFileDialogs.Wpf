@@ -1,12 +1,12 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     /// <summary>Creates a Vista or Windows 7 Common File Dialog, allowing the user to select one or more files.</summary>
     public sealed class CommonOpenFileDialog : CommonFileDialog

@@ -4,7 +4,7 @@ using MS.WindowsAPICodePack.Internal;
 using System;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     internal static class StockIconsNativeMethods
     {

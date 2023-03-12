@@ -1,11 +1,11 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using MS.WindowsAPICodePack.Internal;
 using System;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell.PropertySystem
+namespace WindowsAPICodePack.Shell.PropertySystem
 {
     /// <summary>Creates a property writer capable of setting multiple properties for a given ShellObject.</summary>
     public class ShellPropertyWriter : IDisposable

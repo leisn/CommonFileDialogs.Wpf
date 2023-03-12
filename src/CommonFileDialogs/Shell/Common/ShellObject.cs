@@ -1,14 +1,14 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.PropertySystem;
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.PropertySystem;
+using WindowsAPICodePack.Shell.Resources;
 using MS.WindowsAPICodePack.Internal;
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>The base class for all Shell objects in Shell Namespace.</summary>
     public abstract class ShellObject : IDisposable, IEquatable<ShellObject>

@@ -3,7 +3,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     [ComImport,
     Guid(ShellIIDGuid.IShellLibrary),

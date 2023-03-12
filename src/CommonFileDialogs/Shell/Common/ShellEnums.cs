@@ -1,6 +1,6 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>One of the values that indicates how the ShellObject DisplayName should look.</summary>
     public enum DisplayNameType

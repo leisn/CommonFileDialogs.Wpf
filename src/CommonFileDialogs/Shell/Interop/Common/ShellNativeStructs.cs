@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>
     /// The STGM constants are flags that indicate conditions for creating and deleting the object and access modes for the object.

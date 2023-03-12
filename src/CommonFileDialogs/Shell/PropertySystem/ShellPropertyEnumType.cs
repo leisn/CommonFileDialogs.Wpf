@@ -2,7 +2,7 @@
 
 using MS.WindowsAPICodePack.Internal;
 
-namespace Microsoft.WindowsAPICodePack.Shell.PropertySystem
+namespace WindowsAPICodePack.Shell.PropertySystem
 {
     /// <summary>Defines the enumeration values for a property type.</summary>
     public class ShellPropertyEnumType

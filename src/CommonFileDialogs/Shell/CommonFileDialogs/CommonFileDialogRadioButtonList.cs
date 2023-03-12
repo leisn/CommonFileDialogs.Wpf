@@ -1,12 +1,12 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows.Markup;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs.Controls
+namespace WindowsAPICodePack.Dialogs.Controls
 {
     /// <summary>Represents a radio button list for the Common File Dialog.</summary>
     [ContentProperty("Items")]

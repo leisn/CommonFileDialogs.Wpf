@@ -1,8 +1,8 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     /// <summary>Defines the class of commonly used file filters.</summary>
     public static class CommonFileDialogStandardFilters

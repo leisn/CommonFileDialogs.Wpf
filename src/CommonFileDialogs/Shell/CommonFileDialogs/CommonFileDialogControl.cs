@@ -1,6 +1,6 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-namespace Microsoft.WindowsAPICodePack.Dialogs.Controls
+namespace WindowsAPICodePack.Dialogs.Controls
 {
     /// <summary>Defines an abstract class that supports shared functionality for the common file dialog controls.</summary>
     public abstract class CommonFileDialogControl : DialogControl

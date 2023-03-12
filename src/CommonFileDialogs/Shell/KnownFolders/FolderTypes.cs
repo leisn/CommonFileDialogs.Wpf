@@ -1,10 +1,10 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using System;
 using System.Collections.Generic;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>The FolderTypes values represent a view template applied to a folder, usually based on its intended use and contents.</summary>
     internal static class FolderTypes

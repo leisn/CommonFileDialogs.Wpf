@@ -33,7 +33,7 @@ using System.Linq;
 using System.Text;
 */
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>Provides extension methods for raising events safely.</summary>
     public static class EventHandlerExtensionMethods

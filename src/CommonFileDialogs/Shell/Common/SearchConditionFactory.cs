@@ -1,14 +1,14 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.PropertySystem;
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.PropertySystem;
+using WindowsAPICodePack.Shell.Resources;
 using MS.WindowsAPICodePack.Internal;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>Provides methods for creating or resolving a condition tree that was obtained by parsing a query string.</summary>
     public static class SearchConditionFactory

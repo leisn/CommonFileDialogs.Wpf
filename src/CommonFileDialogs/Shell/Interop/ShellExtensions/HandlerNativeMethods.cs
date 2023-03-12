@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace Microsoft.WindowsAPICodePack.Shell.Interop
+namespace WindowsAPICodePack.Shell.Interop
 {
     /// <summary>Provides means by which to intiailze with a file.</summary>
     [ComImport]

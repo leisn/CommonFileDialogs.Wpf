@@ -1,6 +1,6 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell;
 using MS.WindowsAPICodePack.Internal;
 using System;
 using System.Runtime.CompilerServices;
@@ -9,7 +9,7 @@ using System.Text;
 
 #pragma warning disable CS0108
 
-namespace Microsoft.WindowsAPICodePack.Controls
+namespace WindowsAPICodePack.Controls
 {
     internal enum CommDlgBrowser2ViewFlags
     {

@@ -1,7 +1,7 @@
-﻿using Microsoft.WindowsAPICodePack.Shell.Interop;
+﻿using WindowsAPICodePack.Shell.Interop;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>A wrapper for a RECT struct</summary>
     [StructLayout(LayoutKind.Sequential)]

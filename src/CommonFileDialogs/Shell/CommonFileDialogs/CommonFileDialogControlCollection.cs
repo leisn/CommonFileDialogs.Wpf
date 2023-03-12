@@ -1,12 +1,12 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs.Controls
+namespace WindowsAPICodePack.Dialogs.Controls
 {
     /// <summary>Provides a strongly typed collection for dialog controls.</summary>
     /// <typeparam name="T">DialogControl</typeparam>

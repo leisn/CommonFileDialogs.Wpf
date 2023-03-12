@@ -1,10 +1,10 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell;
 using System;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     // Dummy base interface for CommonFileDialog coclasses.
     internal interface NativeCommonFileDialog

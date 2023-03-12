@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell.Interop.Common
+namespace WindowsAPICodePack.Shell.Interop.Common
 {
     [Flags]
     internal enum SetWindowPosFlags

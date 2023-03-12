@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>
     /// Describes the event that has occurred. 

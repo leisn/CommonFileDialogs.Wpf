@@ -4,48 +4,48 @@
 Before:
 using System;
 After:
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell.Interop;
 */
 
 /* Unmerged change from project 'Shell (net462)'
 Before:
 using System;
 After:
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell.Interop;
 */
 
 /* Unmerged change from project 'Shell (net472)'
 Before:
 using System;
 After:
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell.Interop;
 */
 
-using Microsoft.WindowsAPICodePack.Taskbar;
+using WindowsAPICodePack.Taskbar;
 using System;
 
 /* Unmerged change from project 'Shell (net452)'
 Before:
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell.Interop;
 After:
 using System;
 */
 
 /* Unmerged change from project 'Shell (net462)'
 Before:
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell.Interop;
 After:
 using System;
 */
 
 /* Unmerged change from project 'Shell (net472)'
 Before:
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell.Interop;
 After:
 using System;
 */
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     [Flags]
     internal enum WindowStyles

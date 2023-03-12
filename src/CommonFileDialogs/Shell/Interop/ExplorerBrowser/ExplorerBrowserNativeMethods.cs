@@ -5,7 +5,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Security;
 
-namespace Microsoft.WindowsAPICodePack.Controls
+namespace WindowsAPICodePack.Controls
 {
     /// <summary>Internal class that contains interop declarations for functions that are not benign and are performance critical.</summary>
     [SuppressUnmanagedCodeSecurity]

@@ -2,7 +2,7 @@
 
 using System.ComponentModel;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     /// <summary>Creates the event data associated with <see cref="CommonFileDialog.FolderChanging"/> event.</summary>
     public class CommonFileDialogFolderChangeEventArgs : CancelEventArgs

@@ -2,7 +2,7 @@
 
 using System.Windows.Markup;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs.Controls
+namespace WindowsAPICodePack.Dialogs.Controls
 {
     /// <summary>Defines the properties and constructors for all prominent controls in the Common File Dialog.</summary>
     [ContentProperty("Items")]

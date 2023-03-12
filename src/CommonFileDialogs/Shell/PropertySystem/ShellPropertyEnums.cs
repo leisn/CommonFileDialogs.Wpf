@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Microsoft.WindowsAPICodePack.Shell.PropertySystem
+namespace WindowsAPICodePack.Shell.PropertySystem
 {
     /// <summary>Property Enumeration Types</summary>
     public enum PropEnumType

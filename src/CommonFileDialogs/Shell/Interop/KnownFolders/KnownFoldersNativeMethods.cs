@@ -4,7 +4,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Security;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>
     /// Internal class that contains interop declarations for functions that are considered benign but that are performance critical.

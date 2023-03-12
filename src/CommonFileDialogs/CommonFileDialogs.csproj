@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <AssemblyName>Microsoft.WindowsAPICodePack.Shell.CommonFileDialogs</AssemblyName>
+    <AssemblyName>WindowsAPICodePack.Shell.CommonFileDialogs</AssemblyName>
     <PackageId>WindowsAPICodePack.Shell.CommonFileDialogs</PackageId>
-    <VersionPrefix>1.1.4</VersionPrefix>
+    <VersionPrefix>1.1.5</VersionPrefix>
     <Title>$(AssemblyName)</Title>
     <Authors>rpastric;contre;dahall;emako</Authors>
     <Company>Microsoft</Company>
     <Product>Microsoft Windows API Code Pack for .NET Framework</Product>
-    <PackageLicenseUrl>https://github.com/emako/CommonFileDialogs/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/emako/CommonFileDialogs</PackageProjectUrl>
+    <PackageRepositoryUrl>https://github.com/emako/CommonFileDialogs</PackageRepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>CommonFileDialogs cropped from Windows API Code Pack 1.1.</Description>
     <PackageReleaseNotes>See in project site.</PackageReleaseNotes>
@@ -23,16 +23,18 @@
     <UseWPF>true</UseWPF>
     <UseWinUI>false</UseWinUI>
     <LangVersion>latest</LangVersion>
-    <RootNamespace>Microsoft.WindowsAPICodePack.Shell</RootNamespace>
+    <RootNamespace>WindowsAPICodePack.Shell</RootNamespace>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="\"/>
     <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\"/>
   </ItemGroup>
-	
+
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
@@ -46,7 +48,7 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Resources\LocalizedMessages.resx">
-      <CustomToolNamespace>Microsoft.WindowsAPICodePack.Shell.Resources</CustomToolNamespace>
+      <CustomToolNamespace>WindowsAPICodePack.Shell.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LocalizedMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>

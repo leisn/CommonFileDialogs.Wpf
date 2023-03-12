@@ -1,11 +1,11 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell;
 using System;
 using System.Collections.ObjectModel;
 using System.Text;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     /// <summary>Stores the file extensions used when filtering files in File Open and File Save dialogs.</summary>
     public class CommonFileDialogFilter

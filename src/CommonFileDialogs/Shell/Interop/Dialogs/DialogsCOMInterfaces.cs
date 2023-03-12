@@ -1,13 +1,13 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell;
-using Microsoft.WindowsAPICodePack.Shell.PropertySystem;
+using WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell.PropertySystem;
 using MS.WindowsAPICodePack.Internal;
 using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     // Disable warning if a method declaration hides another inherited from a parent COM interface To successfully import a COM interface,
     // all inherited methods need to be declared again with the exception of those already declared in "IUnknown"

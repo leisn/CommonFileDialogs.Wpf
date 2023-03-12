@@ -1,7 +1,7 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell.PropertySystem;
-using Microsoft.WindowsAPICodePack.Taskbar;
+using WindowsAPICodePack.Shell.PropertySystem;
+using WindowsAPICodePack.Taskbar;
 using MS.WindowsAPICodePack.Internal;
 using System;
 using System.Runtime.CompilerServices;
@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     internal enum SICHINTF
     {
@@ -800,15 +800,15 @@ namespace Microsoft.WindowsAPICodePack.Shell
     {
         void GetThumbnail([In] IShellItem pShellItem,
         [In] uint cxyRequestedThumbSize,
-        [In] Microsoft.WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailOptions flags,
+        [In] WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailOptions flags,
         [Out] out ISharedBitmap ppvThumb,
-        [Out] out Microsoft.WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailCacheOptions pOutFlags,
-        [Out] Microsoft.WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailId pThumbnailID);
+        [Out] out WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailCacheOptions pOutFlags,
+        [Out] WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailId pThumbnailID);
 
-        void GetThumbnailByID([In] Microsoft.WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailId thumbnailID,
+        void GetThumbnailByID([In] WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailId thumbnailID,
         [In] uint cxyRequestedThumbSize,
         [Out] out ISharedBitmap ppvThumb,
-        [Out] out Microsoft.WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailCacheOptions pOutFlags);
+        [Out] out WindowsAPICodePack.Shell.ShellNativeMethods.ThumbnailCacheOptions pOutFlags);
     }
 
     [ComImport,

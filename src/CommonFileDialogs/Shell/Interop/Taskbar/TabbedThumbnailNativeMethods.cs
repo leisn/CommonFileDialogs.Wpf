@@ -5,8 +5,8 @@ Before:
 using System;
 using System.Runtime.InteropServices;
 After:
-using Microsoft.WindowsAPICodePack.Shell;
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell.Interop;
 */
 
 /* Unmerged change from project 'Shell (net462)'
@@ -14,8 +14,8 @@ Before:
 using System;
 using System.Runtime.InteropServices;
 After:
-using Microsoft.WindowsAPICodePack.Shell;
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell.Interop;
 */
 
 /* Unmerged change from project 'Shell (net472)'
@@ -23,15 +23,15 @@ Before:
 using System;
 using System.Runtime.InteropServices;
 After:
-using Microsoft.WindowsAPICodePack.Shell;
-using Microsoft.WindowsAPICodePack.Shell.Interop;
+using WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell.Interop;
 */
 
-using Microsoft.WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell;
 using System;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Taskbar
+namespace WindowsAPICodePack.Taskbar
 {
     internal static class TabbedThumbnailNativeMethods
     {

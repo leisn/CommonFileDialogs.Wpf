@@ -2,7 +2,7 @@
 
 using MS.WindowsAPICodePack.Internal;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>Represents a saved search</summary>
     public class ShellSavedSearchCollection : ShellSearchCollection

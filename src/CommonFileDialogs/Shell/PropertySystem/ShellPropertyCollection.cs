@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell.PropertySystem
+namespace WindowsAPICodePack.Shell.PropertySystem
 {
     /// <summary>Creates a readonly collection of IProperty objects.</summary>
     public class ShellPropertyCollection : ReadOnlyCollection<IShellProperty>, IDisposable

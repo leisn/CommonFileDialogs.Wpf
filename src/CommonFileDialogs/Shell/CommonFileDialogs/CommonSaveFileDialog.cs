@@ -1,8 +1,8 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Shell;
-using Microsoft.WindowsAPICodePack.Shell.PropertySystem;
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell.PropertySystem;
+using WindowsAPICodePack.Shell.Resources;
 using MS.WindowsAPICodePack.Internal;
 using System;
 using System.Diagnostics;
@@ -11,7 +11,7 @@ using System.Text;
 
 #pragma warning disable CS8073
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     /// <summary>Creates a Vista or Windows 7 Common File Dialog, allowing the user to select the filename and location for a saved file.</summary>
     /// <permission cref="System.Security.Permissions.FileDialogPermission">to save a file. Associated enumeration: <see cref="System.Security.Permissions.SecurityAction.LinkDemand"/>.</permission>

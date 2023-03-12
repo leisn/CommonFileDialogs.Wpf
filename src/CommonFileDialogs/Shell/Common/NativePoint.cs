@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>A wrapper for the native POINT structure.</summary>
     [StructLayout(LayoutKind.Sequential)]

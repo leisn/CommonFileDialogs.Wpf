@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-namespace Microsoft.WindowsAPICodePack.Shell.PropertySystem
+namespace WindowsAPICodePack.Shell.PropertySystem
 {
     internal class ShellPropertyDescriptionsCache
     {

@@ -4,7 +4,7 @@ Before:
 using System;
 using System.Collections.Generic;
 After:
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using MS.Collections.Internal;
 */
 
@@ -13,7 +13,7 @@ Before:
 using System;
 using System.Collections.Generic;
 After:
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using MS.Collections.Internal;
 */
 
@@ -22,10 +22,10 @@ Before:
 using System;
 using System.Collections.Generic;
 After:
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using MS.Collections.Internal;
 */
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 using System;
 
 /* Unmerged change from project 'Shell (net452)'
@@ -33,7 +33,7 @@ Before:
 using System.Text;
 using MS.WindowsAPICodePack.Internal;
 using System.Threading;
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 After:
 using System.Collections.Generic;
 using System.Linq;
@@ -46,7 +46,7 @@ Before:
 using System.Text;
 using MS.WindowsAPICodePack.Internal;
 using System.Threading;
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 After:
 using System.Collections.Generic;
 using System.Linq;
@@ -59,7 +59,7 @@ Before:
 using System.Text;
 using MS.WindowsAPICodePack.Internal;
 using System.Threading;
-using Microsoft.WindowsAPICodePack.Shell.Resources;
+using WindowsAPICodePack.Shell.Resources;
 After:
 using System.Collections.Generic;
 using System.Linq;
@@ -69,7 +69,7 @@ using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     internal static class MessageListenerFilter
     {

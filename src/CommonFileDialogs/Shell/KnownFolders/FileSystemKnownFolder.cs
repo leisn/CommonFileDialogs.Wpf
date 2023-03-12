@@ -4,7 +4,7 @@ using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     /// <summary>Represents a registered file system Known Folder</summary>
     public class FileSystemKnownFolder : ShellFileSystemFolder, IKnownFolder, IDisposable

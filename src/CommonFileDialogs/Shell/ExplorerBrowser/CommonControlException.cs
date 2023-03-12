@@ -2,7 +2,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Controls
+namespace WindowsAPICodePack.Controls
 {
     /// <summary>An exception thrown when an error occurs while dealing with Control objects.</summary>
     [Serializable]

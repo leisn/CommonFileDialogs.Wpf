@@ -2,7 +2,7 @@
 
 using System.Diagnostics;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs.Controls
+namespace WindowsAPICodePack.Dialogs.Controls
 {
     /// <summary>Defines the label controls in the Common File Dialog.</summary>
     public class CommonFileDialogLabel : CommonFileDialogControl

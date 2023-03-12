@@ -1,6 +1,6 @@
 ﻿//Copyright (c) Microsoft Corporation.  All rights reserved.
 
-namespace Microsoft.WindowsAPICodePack.Controls
+namespace WindowsAPICodePack.Controls
 {
     internal static class ExplorerBrowserCLSIDGuid
     {

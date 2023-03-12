@@ -28,7 +28,7 @@ using System.Text;
 */
 Runtime.InteropServices;
 
-namespace Microsoft.WindowsAPICodePack.Shell
+namespace WindowsAPICodePack.Shell
 {
     internal static class IntPtrExtensions
     {

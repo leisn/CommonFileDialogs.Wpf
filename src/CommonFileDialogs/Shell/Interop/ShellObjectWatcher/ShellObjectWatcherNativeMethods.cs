@@ -3,7 +3,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace Microsoft.WindowsAPICodePack.Shell.Interop
+namespace WindowsAPICodePack.Shell.Interop
 {
     /// <summary>Wraps the native Windows MSG structure.</summary>
     [StructLayout(LayoutKind.Sequential)]

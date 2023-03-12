@@ -2,7 +2,7 @@
 
 using System.Diagnostics;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs.Controls
+namespace WindowsAPICodePack.Dialogs.Controls
 {
     /// <summary>Defines the class for the simplest separator controls.</summary>
     public class CommonFileDialogSeparator : CommonFileDialogControl

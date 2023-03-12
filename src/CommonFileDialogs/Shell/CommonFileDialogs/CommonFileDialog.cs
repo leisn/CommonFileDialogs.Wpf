@@ -1,9 +1,5 @@
 //Copyright (c) Microsoft Corporation.  All rights reserved.
 
-using Microsoft.WindowsAPICodePack.Controls;
-using Microsoft.WindowsAPICodePack.Dialogs.Controls;
-using Microsoft.WindowsAPICodePack.Shell;
-using Microsoft.WindowsAPICodePack.Shell.Resources;
 using MS.WindowsAPICodePack.Internal;
 using System;
 using System.Collections.Generic;
@@ -14,8 +10,12 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Markup;
+using WindowsAPICodePack.Controls;
+using WindowsAPICodePack.Dialogs.Controls;
+using WindowsAPICodePack.Shell;
+using WindowsAPICodePack.Shell.Resources;
 
-namespace Microsoft.WindowsAPICodePack.Dialogs
+namespace WindowsAPICodePack.Dialogs
 {
     /// <summary>Defines the abstract base class for the common file dialogs.</summary>
     [ContentProperty("Controls")]
