@@ -115,18 +115,18 @@ namespace WindowsAPICodePack.Shell
             }
         }
 
-        /// <summary>
-        /// Gets the icon image in <see cref="System.Drawing.Bitmap"/> format. 
-        /// </summary>
-        public Bitmap Bitmap
-        {
-            get
-            {
-                UpdateHIcon();
-
-                return hIcon != IntPtr.Zero ? Bitmap.FromHicon(hIcon) : null;
-            }
-        }
+        ///// <summary>
+        ///// Gets the icon image in <see cref="System.Drawing.Bitmap"/> format. 
+        ///// </summary>
+        //public Bitmap Bitmap
+        //{
+        //    get
+        //    {
+        //        UpdateHIcon();
+        //
+        //        return hIcon != IntPtr.Zero ? Bitmap.FromHicon(hIcon) : null;
+        //    }
+        //}
 
         /// <summary>
         /// Gets the icon image in <see cref="System.Windows.Media.Imaging.BitmapSource"/> format. 
@@ -142,18 +142,18 @@ namespace WindowsAPICodePack.Shell
             }
         }
 
-        /// <summary>
-        /// Gets the icon image in <see cref="System.Drawing.Icon"/> format.
-        /// </summary>
-        public Icon Icon
-        {
-            get
-            {
-                UpdateHIcon();
+        ///// <summary>
+        ///// Gets the icon image in <see cref="System.Drawing.Icon"/> format.
+        ///// </summary>
+        //public Icon Icon
+        //{
+        //    get
+        //    {
+        //        UpdateHIcon();
 
-                return hIcon != IntPtr.Zero ? Icon.FromHandle(hIcon) : null;
-            }
-        }
+        //        return hIcon != IntPtr.Zero ? Icon.FromHandle(hIcon) : null;
+        //    }
+        //}
 
         #endregion
 

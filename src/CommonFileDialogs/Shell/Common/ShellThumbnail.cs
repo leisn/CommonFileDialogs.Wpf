@@ -79,14 +79,14 @@ namespace WindowsAPICodePack.Shell
             }
         }
 
-        /// <summary>Gets the thumbnail or icon in extra large size and <see cref="System.Drawing.Bitmap"/> format.</summary>
-        public Bitmap ExtraLargeBitmap => GetBitmap(DefaultIconSize.ExtraLarge, DefaultThumbnailSize.ExtraLarge);
+        ///// <summary>Gets the thumbnail or icon in extra large size and <see cref="System.Drawing.Bitmap"/> format.</summary>
+        //public Bitmap ExtraLargeBitmap => GetBitmap(DefaultIconSize.ExtraLarge, DefaultThumbnailSize.ExtraLarge);
 
         /// <summary>Gets the thumbnail or icon in Extra Large size and <see cref="System.Windows.Media.Imaging.BitmapSource"/> format.</summary>
         public BitmapSource ExtraLargeBitmapSource => GetBitmapSource(DefaultIconSize.ExtraLarge, DefaultThumbnailSize.ExtraLarge);
 
-        /// <summary>Gets the thumbnail or icon in Extra Large size and <see cref="System.Drawing.Icon"/> format.</summary>
-        public Icon ExtraLargeIcon => Icon.FromHandle(ExtraLargeBitmap.GetHicon());
+        ///// <summary>Gets the thumbnail or icon in Extra Large size and <see cref="System.Drawing.Icon"/> format.</summary>
+        //public Icon ExtraLargeIcon => Icon.FromHandle(ExtraLargeBitmap.GetHicon());
 
         /// <summary>
         /// Gets or sets a value that determines if the current format option is thumbnail or icon, thumbnail only, or icon only. The default
@@ -109,29 +109,29 @@ namespace WindowsAPICodePack.Shell
             }
         }
 
-        /// <summary>
-        /// Gets the thumbnail or icon image in <see cref="System.Drawing.Icon"/> format. Null is returned if the ShellObject does not have a
-        /// thumbnail or icon image.
-        /// </summary>
-        public Icon Icon => Icon.FromHandle(Bitmap.GetHicon());
+        ///// <summary>
+        ///// Gets the thumbnail or icon image in <see cref="System.Drawing.Icon"/> format. Null is returned if the ShellObject does not have a
+        ///// thumbnail or icon image.
+        ///// </summary>
+        //public Icon Icon => Icon.FromHandle(Bitmap.GetHicon());
 
-        /// <summary>Gets the thumbnail or icon in large size and <see cref="System.Drawing.Bitmap"/> format.</summary>
-        public Bitmap LargeBitmap => GetBitmap(DefaultIconSize.Large, DefaultThumbnailSize.Large);
+        ///// <summary>Gets the thumbnail or icon in large size and <see cref="System.Drawing.Bitmap"/> format.</summary>
+        //public Bitmap LargeBitmap => GetBitmap(DefaultIconSize.Large, DefaultThumbnailSize.Large);
 
         /// <summary>Gets the thumbnail or icon in large size and <see cref="System.Windows.Media.Imaging.BitmapSource"/> format.</summary>
         public BitmapSource LargeBitmapSource => GetBitmapSource(DefaultIconSize.Large, DefaultThumbnailSize.Large);
 
-        /// <summary>Gets the thumbnail or icon in Large size and <see cref="System.Drawing.Icon"/> format.</summary>
-        public Icon LargeIcon => Icon.FromHandle(LargeBitmap.GetHicon());
+        ///// <summary>Gets the thumbnail or icon in Large size and <see cref="System.Drawing.Icon"/> format.</summary>
+        //public Icon LargeIcon => Icon.FromHandle(LargeBitmap.GetHicon());
 
-        /// <summary>Gets the thumbnail or icon in Medium size and <see cref="System.Drawing.Bitmap"/> format.</summary>
-        public Bitmap MediumBitmap => GetBitmap(DefaultIconSize.Medium, DefaultThumbnailSize.Medium);
+        ///// <summary>Gets the thumbnail or icon in Medium size and <see cref="System.Drawing.Bitmap"/> format.</summary>
+        //public Bitmap MediumBitmap => GetBitmap(DefaultIconSize.Medium, DefaultThumbnailSize.Medium);
 
         /// <summary>Gets the thumbnail or icon in medium size and <see cref="System.Windows.Media.Imaging.BitmapSource"/> format.</summary>
         public BitmapSource MediumBitmapSource => GetBitmapSource(DefaultIconSize.Medium, DefaultThumbnailSize.Medium);
 
-        /// <summary>Gets the thumbnail or icon in Medium size and <see cref="System.Drawing.Icon"/> format.</summary>
-        public Icon MediumIcon => Icon.FromHandle(MediumBitmap.GetHicon());
+        ///// <summary>Gets the thumbnail or icon in Medium size and <see cref="System.Drawing.Icon"/> format.</summary>
+        //public Icon MediumIcon => Icon.FromHandle(MediumBitmap.GetHicon());
 
         /// <summary>
         /// Gets or sets a value that determines if the current retrieval option is cache or extract, cache only, or from memory only. The
@@ -139,20 +139,20 @@ namespace WindowsAPICodePack.Shell
         /// </summary>
         public ShellThumbnailRetrievalOption RetrievalOption { get; set; }
 
-        /// <summary>Gets the thumbnail or icon in small size and <see cref="System.Drawing.Bitmap"/> format.</summary>
-        public Bitmap SmallBitmap => GetBitmap(DefaultIconSize.Small, DefaultThumbnailSize.Small);
+        ///// <summary>Gets the thumbnail or icon in small size and <see cref="System.Drawing.Bitmap"/> format.</summary>
+        //public Bitmap SmallBitmap => GetBitmap(DefaultIconSize.Small, DefaultThumbnailSize.Small);
 
         /// <summary>Gets the thumbnail or icon in small size and <see cref="System.Windows.Media.Imaging.BitmapSource"/> format.</summary>
         public BitmapSource SmallBitmapSource => GetBitmapSource(DefaultIconSize.Small, DefaultThumbnailSize.Small);
 
-        /// <summary>Gets the thumbnail or icon in small size and <see cref="System.Drawing.Icon"/> format.</summary>
-        public Icon SmallIcon => Icon.FromHandle(SmallBitmap.GetHicon());
+        ///// <summary>Gets the thumbnail or icon in small size and <see cref="System.Drawing.Icon"/> format.</summary>
+        //public Icon SmallIcon => Icon.FromHandle(SmallBitmap.GetHicon());
 
-        /// <summary>
-        /// Gets the thumbnail or icon image in <see cref="System.Drawing.Bitmap"/> format. Null is returned if the ShellObject does not have
-        /// a thumbnail or icon image.
-        /// </summary>
-        public Bitmap Bitmap => GetBitmap(CurrentSize);
+        ///// <summary>
+        ///// Gets the thumbnail or icon image in <see cref="System.Drawing.Bitmap"/> format. Null is returned if the ShellObject does not have
+        ///// a thumbnail or icon image.
+        ///// </summary>
+        //public Bitmap Bitmap => GetBitmap(CurrentSize);
 
         private ShellNativeMethods.SIIGBF CalculateFlags()
         {
@@ -184,20 +184,20 @@ namespace WindowsAPICodePack.Shell
             return flags;
         }
 
-        private Bitmap GetBitmap(System.Windows.Size iconOnlySize, System.Windows.Size thumbnailSize) => GetBitmap(FormatOption == ShellThumbnailFormatOption.IconOnly ? iconOnlySize : thumbnailSize);
+        //private Bitmap GetBitmap(System.Windows.Size iconOnlySize, System.Windows.Size thumbnailSize) => GetBitmap(FormatOption == ShellThumbnailFormatOption.IconOnly ? iconOnlySize : thumbnailSize);
 
-        private Bitmap GetBitmap(System.Windows.Size size)
-        {
-            var hBitmap = GetHBitmap(size);
+        //private Bitmap GetBitmap(System.Windows.Size size)
+        //{
+        //    var hBitmap = GetHBitmap(size);
 
-            // return a System.Drawing.Bitmap from the hBitmap
-            var returnValue = Bitmap.FromHbitmap(hBitmap);
+        //    // return a System.Drawing.Bitmap from the hBitmap
+        //    var returnValue = Bitmap.FromHbitmap(hBitmap);
 
-            // delete HBitmap to avoid memory leaks
-            ShellNativeMethods.DeleteObject(hBitmap);
+        //    // delete HBitmap to avoid memory leaks
+        //    ShellNativeMethods.DeleteObject(hBitmap);
 
-            return returnValue;
-        }
+        //    return returnValue;
+        //}
 
         private BitmapSource GetBitmapSource(System.Windows.Size iconOnlySize, System.Windows.Size thumbnailSize) => GetBitmapSource(FormatOption == ShellThumbnailFormatOption.IconOnly ? iconOnlySize : thumbnailSize);
 

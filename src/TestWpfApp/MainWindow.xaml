@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:TestWpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Test" Click="Button_Click" Height="80" FontSize="30"/>
+    <Grid Margin="20,0">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <Button Content="Open Folder" Click="OpenFolder_Click" Height="80" FontSize="30"/>
+            <Button Content="Open File"  Click="OpenFile_Click" Height="80" FontSize="30" Margin="0,20"/>
+            <Button Content="Save File"  Click="SaveFile_Click" Height="80" FontSize="30"/>
+        </StackPanel>
     </Grid>
 </Window>

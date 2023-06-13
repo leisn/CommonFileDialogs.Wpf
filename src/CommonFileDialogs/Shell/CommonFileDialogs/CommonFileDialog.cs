@@ -861,10 +861,10 @@ namespace WindowsAPICodePack.Dialogs
                 {
                     parentWindow = (new WindowInteropHelper(System.Windows.Application.Current.MainWindow)).Handle;
                 }
-                else if (System.Windows.Forms.Application.OpenForms.Count > 0)
-                {
-                    parentWindow = System.Windows.Forms.Application.OpenForms[0].Handle;
-                }
+                //else if (System.Windows.Forms.Application.OpenForms.Count > 0)
+                //{
+                //    parentWindow = System.Windows.Forms.Application.OpenForms[0].Handle;
+                //}
             }
 
             var guid = new Guid(ShellIIDGuid.IShellItem2);

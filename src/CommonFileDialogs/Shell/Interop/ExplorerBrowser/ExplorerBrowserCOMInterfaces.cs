@@ -6,6 +6,8 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Diagnostics.CodeAnalysis;
+using System.Security;
 
 #pragma warning disable CS0108
 
@@ -256,7 +258,7 @@ namespace WindowsAPICodePack.Controls
         /// <param name="dwFlag">One or more EXPLORER_BROWSER_OPTIONS flags to be set.</param>
         /// <returns></returns>
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
-        void SetOptions([In]ExplorerBrowserOptions dwFlag);
+        void SetOptions([In] ExplorerBrowserOptions dwFlag);
 
         /// <summary>Gets the current browser options.</summary>
         /// <param name="pdwFlag">When this method returns, contains the current EXPLORER_BROWSER_OPTIONS for the browser.</param>
@@ -316,7 +318,7 @@ namespace WindowsAPICodePack.Controls
 
         [PreserveSig]
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
-        HResult OnViewCreated([MarshalAs(UnmanagedType.IUnknown)]  object psv);
+        HResult OnViewCreated([MarshalAs(UnmanagedType.IUnknown)] object psv);
 
         [PreserveSig]
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
@@ -515,29 +517,90 @@ namespace WindowsAPICodePack.Controls
         void DoRename();
     }
 
+    //[SuppressMessage("Microsoft.Security", "CA2108:ReviewDeclarativeSecurityOnValueTypes")]
+    //public struct Message
+    //{
+    //    IntPtr hWnd;
+    //    int msg;
+    //    IntPtr wparam;
+    //    IntPtr lparam;
+    //    IntPtr result;
+    //    public IntPtr HWnd
+    //    {
+    //        get { return hWnd; }
+    //        set { hWnd = value; }
+    //    }
+    //    public int Msg
+    //    {
+    //        get { return msg; }
+    //        set { msg = value; }
+    //    }
+    //    public IntPtr WParam
+    //    {
+    //        get { return wparam; }
+    //        set { wparam = value; }
+    //    }
+    //    public IntPtr LParam
+    //    {
+    //        get { return lparam; }
+    //        set { lparam = value; }
+    //    }
+    //    public IntPtr Result
+    //    {
+    //        get { return result; }
+    //        set { result = value; }
+    //    }
+    //    public override bool Equals(object o)
+    //    {
+    //        if (o is not Message m)
+    //        {
+    //            return false;
+    //        }
+    //        return hWnd == m.hWnd &&
+    //               msg == m.msg &&
+    //               wparam == m.wparam &&
+    //               lparam == m.lparam &&
+    //               result == m.result;
+    //    }
+    //    public override int GetHashCode()
+    //    {
+    //        return (int)hWnd << 4 | msg;
+    //    }
+
+    //    public static bool operator !=(Message a, Message b)
+    //    {
+    //        return !a.Equals(b);
+    //    }
+
+    //    public static bool operator ==(Message a, Message b)
+    //    {
+    //        return a.Equals(b);
+    //    }
+    //}
+
     //    [PreserveSig]
     //    [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
     //    HResult Notify(
     //        IntPtr pshv,
     //        CommDlgBrowserNotifyType notifyType);
     //}
-    [ComImport,
-   Guid(ExplorerBrowserIIDGuid.IInputObject),
-   InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-    internal interface IInputObject
-    {
-        [PreserveSig]
-        [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
-        HResult UIActivateIO(bool fActivate, ref System.Windows.Forms.Message pMsg);
+    // [ComImport,
+    //Guid(ExplorerBrowserIIDGuid.IInputObject),
+    //InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    // internal interface IInputObject
+    // {
+    //     [PreserveSig]
+    //     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
+    //     HResult UIActivateIO(bool fActivate, ref System.Windows.Form.Message pMsg);
 
-        [PreserveSig]
-        [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
-        HResult HasFocusIO();
+    //     [PreserveSig]
+    //     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
+    //     HResult HasFocusIO();
 
-        [PreserveSig]
-        [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
-        HResult TranslateAcceleratorIO(ref System.Windows.Forms.Message pMsg);
-    };
+    //     [PreserveSig]
+    //     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
+    //     HResult TranslateAcceleratorIO(ref System.Windows.Form.Message pMsg);
+    // };
 
     [ComImport,
      Guid(ExplorerBrowserIIDGuid.IServiceProvider),
@@ -637,7 +700,7 @@ namespace WindowsAPICodePack.Controls
     internal class ExplorerBrowserClass : IExplorerBrowser
     {
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
-        public extern virtual void Initialize(IntPtr hwndParent, [In]ref NativeRect prc, [In] FolderSettings pfs);
+        public extern virtual void Initialize(IntPtr hwndParent, [In] ref NativeRect prc, [In] FolderSettings pfs);
 
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
         public extern virtual void Destroy();
@@ -664,7 +727,7 @@ namespace WindowsAPICodePack.Controls
         public extern virtual HResult Unadvise(uint dwCookie);
 
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
-        public extern virtual void SetOptions([In]ExplorerBrowserOptions dwFlag);
+        public extern virtual void SetOptions([In] ExplorerBrowserOptions dwFlag);
 
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
         public extern virtual void GetOptions(out ExplorerBrowserOptions pdwFlag);
