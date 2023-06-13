@@ -22,5 +22,16 @@ namespace WindowsAPICodePack.Dialogs
 
             return filterSpecs;
         }
+
+        public CommonFileDialogFilterCollection Set(string filters)
+        {
+            Clear();
+            string[] ts = filters.Split('|');
+            for (int i = 1; i <= ts.Length; i += 2)
+            {
+                Add(new CommonFileDialogFilter(ts[i - 1], ts[i]));
+            }
+            return this;
+        }
     }
 }
