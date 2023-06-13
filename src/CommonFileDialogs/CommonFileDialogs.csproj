@@ -5,7 +5,7 @@
     <PackageId>WindowsAPICodePack.Shell.CommonFileDialogs.Wpf</PackageId>
     <VersionPrefix>1.1.5</VersionPrefix>
     <Title>$(AssemblyName)</Title>
-    <Authors>rpastric;contre;dahall;emako</Authors>
+    <Authors>rpastric;contre;dahall;emako,leisn</Authors>
     <Company>Microsoft</Company>
     <Product>Microsoft Windows API Code Pack for .NET Framework</Product>
     <PackageProjectUrl>https://github.com/leisn/CommonFileDialogs.Wpf</PackageProjectUrl>
