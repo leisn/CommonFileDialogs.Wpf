@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>WindowsAPICodePack.Shell.CommonFileDialogs.Wpf</AssemblyName>
     <PackageId>WindowsAPICodePack.Shell.CommonFileDialogs.Wpf</PackageId>
     <VersionPrefix>1.1.5</VersionPrefix>
+    <Version>1.1.5.1</Version>
     <Title>$(AssemblyName)</Title>
     <Authors>rpastric;contre;dahall;emako,leisn</Authors>
     <Company>Microsoft</Company>
@@ -18,7 +18,7 @@
     <PackageTags>WindowsAPICodePack;WindowsAPICodePack-Shell;CommonFileDialog;OpenFileDialog;CommonOpenFileDialog</PackageTags>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <TargetFrameworks>net6.0-windows</TargetFrameworks>
+    <TargetFrameworks>net6.0-windows;netcoreapp3.1;net8.0-windows</TargetFrameworks>
     <UseWindowsForms>false</UseWindowsForms>
     <UseWPF>true</UseWPF>
     <UseWinUI>false</UseWinUI>
